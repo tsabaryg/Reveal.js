@@ -49,7 +49,7 @@ html.reveal-full-page {
  *********************************************/
 
 .reveal .fragment {
-	transition: all .2s ease;
+	transition: all .5s ease;
 
 	&:not(.custom) {
 		opacity: 0;
@@ -81,7 +81,7 @@ html.reveal-full-page {
 	visibility: inherit;
 
 	&.visible {
-		transform: scale( 0.7 );
+		transform: scale( 0.5 );
 	}
 }
 
@@ -209,7 +209,35 @@ html.reveal-full-page {
 	color: #1b91ff;
 }
 
+/*********************************************
+ * VIEW MY CUSTOM FRAGMENTS
+ *********************************************/
+ .reveal .fragment.shrink05 {
+	opacity: 1;
+	visibility: inherit;
 
+	&.visible {
+		transform: scale(0.5);
+	}
+}
+.reveal .fragment.blur {
+	opacity: 1;
+	visibility: inherit;
+
+	&.visible{
+		filter: blur(5px);
+		transform: translate(-40px,-40px);
+	}
+}
+.reveal .fragment.shy {
+	opacity: 1;
+	visibility: inherit;
+
+	&.visible{
+		transform: translate(-25%,-20%) scale(0.5);
+		opacity: 0.2;
+	}
+}
 /*********************************************
  * DEFAULT ELEMENT STYLES
  *********************************************/
